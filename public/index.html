@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viviane Cordeiro - Psicóloga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --bg-color: #fdfaf6; /* Um bege/creme muito claro */
+            --text-color: #3f3d56; /* Um roxo/cinza escuro para texto */
+            --primary-color: #efbad3; /* Rosa suave */
+            --secondary-color: #a7e0e0; /* Verde-água */
+        }
+
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            background-color: var(--bg-color); 
+            color: var(--text-color);
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #eab0c6;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="p-4 md:p-6 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="font-serif text-2xl font-bold">Viviane Cordeiro</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#servicos" class="hover:text-pink-400">Serviços</a>
+                <a href="#sobre" class="hover:text-pink-400">Sobre Mim</a>
+                <a href="#contato" class="hover:text-pink-400">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="text-center py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold leading-tight">Acolhimento e suporte para<br>cada fase do desenvolvimento</h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Um espaço seguro para crianças, adolescentes e suas famílias encontrarem equilíbrio e bem-estar emocional.</p>
+                <a href="#contato" class="mt-8 inline-block btn-primary font-bold py-3 px-8 rounded-full">
+                    Agende uma conversa
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="py-20 px-4" style="background-color: #f7f3ed;">
+            <div class="container mx-auto text-center">
+                <h3 class="font-serif text-3xl font-bold mb-12">Como posso ajudar?</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h4 class="font-serif text-xl font-bold mb-2">Psicoterapia Infantil</h4>
+                        <p class="text-gray-600">Apoio lúdico e terapêutico para as crianças expressarem seus sentimentos e superarem desafios.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h4 class="font-serif text-xl font-bold mb-2">Aconselhamento para Adolescentes</h4>
+                        <p class="text-gray-600">Um ambiente de confiança para os jovens navegarem pelas complexidades da adolescência.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h4 class="font-serif text-xl font-bold mb-2">Orientação para Pais</h4>
+                        <p class="text-gray-600">Suporte e estratégias para fortalecer os vínculos familiares e promover um desenvolvimento saudável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="py-20 px-4">
+             <div class="container mx-auto text-center">
+                <h3 class="font-serif text-3xl font-bold mb-6">Sobre Mim</h3>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    (Aqui entrará a biografia da Viviane, sua formação, abordagem terapêutica e uma mensagem pessoal. Vamos preencher este espaço com o texto que ela fornecer.)
+                </p>
+            </div>
+        </section>
+
+         <!-- Seção de Contato -->
+        <section id="contato" class="py-20 px-4" style="background-color: #f7f3ed;">
+             <div class="container mx-auto text-center">
+                <h3 class="font-serif text-3xl font-bold mb-6">Vamos conversar?</h3>
+                <p class="text-lg text-gray-600 mb-8">Entre em contato para agendar uma consulta ou tirar suas dúvidas.</p>
+                <a href="https://wa.me/SEUNUMERO" class="inline-block btn-primary font-bold py-4 px-10 rounded-full text-lg">
+                    Falar pelo WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
