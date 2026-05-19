@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Viviane Cordeiro Psicóloga</title>
+    <link rel="icon" href="logo.jpeg" type="image/jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
+        :root {
+            --bg-color: #fdfaf6;
+            --text-color: #3f3d56;
+            --primary-color: #efbad3;
+            --secondary-color: #a7e0e0;
+        }
+        body { font-family: 'Poppins', sans-serif; background-color: var(--bg-color); color: var(--text-color); }
+        .font-serif { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="p-4 md:p-6 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html">
+                <img src="logo.jpeg" alt="Logo Viviane Cordeiro Psicóloga" class="h-16 md:h-20">
+            </a>
+            <nav class="flex space-x-6">
+                <a href="index.html" class="hover:text-pink-400">Início</a>
+                <a href="sobre.html" class="hover:text-pink-400">Sobre Mim</a>
+                <a href="servicos.html" class="hover:text-pink-400 font-bold">Serviços</a>
+                <a href="contato.html" class="hover:text-pink-400">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8">
+        <section class="text-center py-12">
+            <h1 class="font-serif text-4xl font-bold mb-4">Meus Serviços</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ofereço um cuidado especializado e empático para cada fase do desenvolvimento, criando um ambiente seguro para o crescimento emocional.</p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <h4 class="font-serif text-2xl font-bold mb-2">Psicoterapia Infantil</h4>
+                <p class="text-gray-600">Através de um ambiente lúdico e seguro, ajudo crianças a processar emoções, desenvolver habilidades sociais e superar desafios comportamentais, fortalecendo sua autoestima e bem-estar.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <h4 class="font-serif text-2xl font-bold mb-2">Aconselhamento para Adolescentes</h4>
+                <p class="text-gray-600">Ofereço um espaço confidencial para que adolescentes possam explorar questões de identidade, ansiedade, pressão social e desafios acadêmicos, guiando-os na jornada para a vida adulta.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                <h4 class="font-serif text-2xl font-bold mb-2">Orientação para Pais</h4>
+                <p class="text-gray-600">Forneço suporte e estratégias práticas para pais e cuidadores, auxiliando na gestão de desafios parentais, fortalecimento de vínculos e na promoção de um ambiente familiar harmonioso.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
