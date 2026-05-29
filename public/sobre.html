@@ -28,24 +28,62 @@
 <body class="antialiased">
 
     <!-- Header -->
-    <header class="p-4 md:p-6 sticky top-0 bg-white/80 backdrop-blur-sm z-50 border-b border-black/5">
+    <header class="p-4 shadow-sm bg-white sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html">
-                <img src="logo.jpeg" alt="Logo Viviane Cordeiro Psicóloga" class="h-16 md:h-20">
+            <!-- Logo -->
+            <a href="index.html" class="flex-shrink-0">
+                <img src="logo.jpeg" alt="Viviane Cordeiro Psicóloga" class="h-12 md:h-16 w-auto object-contain">
             </a>
-            <nav class="flex space-x-6">
-                <a href="index.html" class="hover:text-pink-400">Início</a>
-                <a href="sobre.html" class="hover:text-pink-400 font-bold">Sobre Mim</a>
-                <a href="servicos.html" class="hover:text-pink-400">Serviços</a>
-                <a href="contato.html" class="hover:text-pink-400">Contato</a>
+
+            <!-- Nav desktop -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="hover:text-pink-400 transition-colors">Início</a>
+                <a href="sobre.html" class="hover:text-pink-400 transition-colors font-bold">Sobre Mim</a>
+                <a href="servicos.html" class="hover:text-pink-400 transition-colors">Serviços</a>
+                <a href="contato.html" class="hover:text-pink-400 transition-colors">Contato</a>
                 <a href="https://www.instagram.com/psivivianecordeiro?igsh=MWF0d250aXg1bHgwaw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram"
                    class="inline-flex items-center justify-center w-9 h-9 rounded-full text-white transition-opacity hover:opacity-80"
-                   style="background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
+                   style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.15 2.233 8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.775.131 4.602.425 3.635 1.392 2.667 2.36 2.373 3.532 2.314 4.81 2.256 6.09 2.242 6.498 2.242 12c0 5.502.014 5.91.072 7.19.059 1.278.353 2.45 1.32 3.418.968.967 2.14 1.261 3.418 1.32C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.059 2.45-.353 3.418-1.32.967-.968 1.261-2.14 1.32-3.418.058-1.28.072-1.688.072-7.19 0-5.502-.014-5.91-.072-7.19-.059-1.278-.353-2.45-1.32-3.418C19.398.425 18.225.131 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
                 </a>
             </nav>
+
+            <!-- Mobile: Instagram + hambúrguer -->
+            <div class="flex items-center gap-3 md:hidden">
+                <a href="https://www.instagram.com/psivivianecordeiro?igsh=MWF0d250aXg1bHgwaw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" title="Instagram"
+                   class="inline-flex items-center justify-center w-8 h-8 rounded-full text-white"
+                   style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.225 7.15 2.233 8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.333.014 7.053.072 5.775.131 4.602.425 3.635 1.392 2.667 2.36 2.373 3.532 2.314 4.81 2.256 6.09 2.242 6.498 2.242 12c0 5.502.014 5.91.072 7.19.059 1.278.353 2.45 1.32 3.418.968.967 2.14 1.261 3.418 1.32C8.333 23.986 8.741 24 12 24s3.667-.014 4.947-.072c1.278-.059 2.45-.353 3.418-1.32.967-.968 1.261-2.14 1.32-3.418.058-1.28.072-1.688.072-7.19 0-5.502-.014-5.91-.072-7.19-.059-1.278-.353-2.45-1.32-3.418C19.398.425 18.225.131 16.947.072 15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+                <button id="menu-btn" onclick="toggleMenu()" aria-label="Menu"
+                        class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                    <svg id="icon-open"  class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6"  x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg id="icon-close" class="h-6 w-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu mobile dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden mt-2 pb-2 border-t border-gray-100">
+            <nav class="flex flex-col pt-2 space-y-1">
+                <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-pink-50 hover:text-pink-500 transition-colors">Início</a>
+                <a href="sobre.html" class="block py-2 px-4 rounded-lg hover:bg-pink-50 hover:text-pink-500 transition-colors font-bold">Sobre Mim</a>
+                <a href="servicos.html" class="block py-2 px-4 rounded-lg hover:bg-pink-50 hover:text-pink-500 transition-colors">Serviços</a>
+                <a href="contato.html" class="block py-2 px-4 rounded-lg hover:bg-pink-50 hover:text-pink-500 transition-colors">Contato</a>
+            </nav>
         </div>
     </header>
+
+    <script>
+      function toggleMenu() {
+        var m = document.getElementById('mobile-menu');
+        var o = document.getElementById('icon-open');
+        var c = document.getElementById('icon-close');
+        m.classList.toggle('hidden');
+        o.classList.toggle('hidden');
+        c.classList.toggle('hidden');
+      }
+    </script>
 
     <main class="container mx-auto p-4 md:p-12" data-aos="fade-up">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
