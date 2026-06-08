@@ -37,10 +37,18 @@
             padding: 24px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
         }
         .download-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+        }
+        
+        .download-card img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: cover;
         }
 
         .btn-download {
@@ -140,10 +148,12 @@
                     
                     <!-- Download Card: Livreto -->
                     <div class="download-card">
-                        <div class="text-4xl mb-4">📄</div>
-                        <h3 class="font-serif text-2xl font-bold mb-3">Livreto Viviane Cordeiro</h3>
-                        <p class="text-gray-600 mb-4">Guia completo com informações sobre os serviços e abordagens da psicóloga Viviane Cordeiro.</p>
-                        <p class="text-sm text-gray-500 mb-4">Formato: PDF | Tamanho: ~12.8 MB</p>
+                        <div class="mb-4 overflow-hidden rounded-lg">
+                            <img src="livreto-capa.png" alt="Capa do Livreto para Famílias" class="w-full h-auto object-cover">
+                        </div>
+                        <h3 class="font-serif text-xl font-bold mb-3">Livreto para Famílias: Acolhendo o Diagnóstico</h3>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">Um material acolhedor para pais e responsáveis que estão vivendo o processo de compreensão e aceitação de um diagnóstico infantil. O livreto traz reflexões, orientações e apoio emocional para esse momento delicado.</p>
+                        <p class="text-sm text-gray-500 mb-4">Formato: PDF | Material gratuito</p>
                         <a href="downloads/Livreto_Viviane_Cordeiro (2).pdf" download class="btn-download">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                                 <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
